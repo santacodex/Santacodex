@@ -1,0 +1,129 @@
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .countdown-container {
+            text-align: center;
+            background: black;
+            padding-left: 2cm;
+            padding-right: 2cm;
+            padding-top: 0.8cm;
+            padding-bottom: 0.8cm;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .timer div {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 10px 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 20px;
+        }
+
+        .timer span {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+            padding: 20px;
+            margin-left: 
+        }
+
+        .timer small {
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .wish-message {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin: 15px 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .wish-message.visible {
+            opacity: 1;
+        }
+
+        .name {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .share-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .share-buttons a {
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .share-buttons a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .fireworks {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTFjYTlobTM0NHBzNmp6ang0cXRwa3d6Mmo3ZXhpMHd3YTN5OW5sbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tOZ42Mg6pbTUPHW/giphy.webp') center center/cover no-repeat;
+            display: none;
+        }
+
+        .welcome-message {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+            animation: zoomDance 2s infinite ease-in-out;
+            color: white;
+        }
+
+        @keyframes zoomDance {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    
